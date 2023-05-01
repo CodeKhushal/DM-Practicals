@@ -1,7 +1,10 @@
 # S1 Q1
 
 # Q1 i
-people <- read.table('./data/people.txt', header = TRUE)
+#people <- read.table('./data/people.txt', header = TRUE)
+datafile <- file.choose('./data/people.txt')          #"./people.txt"
+
+peoplefile <- read.table(datafile,header=TRUE,sep=",")
 View(people)
 
 # Q1 ii
